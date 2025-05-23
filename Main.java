@@ -1,9 +1,8 @@
 import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
 
 import javax.swing.*;
 
+import vistas.Bannerpanel;
 import vistas.Loginpanel;
 
 public class Main {
@@ -17,13 +16,11 @@ public class Main {
         miventana.setLayout(new BorderLayout());
     
         // Panel Banner
-        JPanel paneldelBanner = new JPanel();
-        paneldelBanner.setPreferredSize(new Dimension(500,800));;
-        paneldelBanner.setOpaque(true);
-        paneldelBanner.setBackground(Color.GRAY);
-        miventana.add(paneldelBanner,BorderLayout.WEST);
+        Bannerpanel banner = new Bannerpanel();
+        miventana.add(banner.getJPanel(), BorderLayout.WEST);
 
         Loginpanel panellogin = new Loginpanel();
+
         miventana.add(panellogin.getJPanel(), BorderLayout.CENTER); 
         
         miventana.setVisible(true);
