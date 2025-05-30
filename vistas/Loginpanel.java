@@ -2,8 +2,14 @@ package vistas;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.event.ActionEvent; //importar la clase 
+import java.awt.event.ActionListener;
 
 import javax.swing.*;
+
+import ventana.Dashboard;
+import control.LoginControler;
+
 
 
 public class Loginpanel{
@@ -43,14 +49,33 @@ public class Loginpanel{
         titulo4.setPreferredSize(new Dimension(250, 50));
         titulo4.setMaximumSize(new Dimension(250, 50));
 
+
+        
+
+        titulo4.addActionListener(new ActionListener() {
+            @Override //Reiniciar y establecer mi propia configuracion 
+            public void actionPerformed(ActionEvent e){
+
+                //Recuperar Datos
+                String entradausuario = titulo2.getText();
+                String entradaContra = titulo3.getText();
+
+                if(new LoginControler().validacionDatos(entradausuario , entradaContra)){ 
+
+                    JFrame framePadre = (JFrame) SwingUtilities.getWindowAncestor(panelLogin);
+                    framePadre.dispose();
+                    
+                    new Dashboard().getDashFrame();
+                }
+            }
+        });
+
 // Subpanel para alinear a la derecha
         JPanel botonPanel = new JPanel(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
         botonPanel.setOpaque(false); // para que no tape el fondo blanco
         botonPanel.setMaximumSize(new Dimension(800, 60)); // igual que el resto de campos
         botonPanel.add(titulo4);
-
         panelLogin.add(botonPanel);
-
 
         
     

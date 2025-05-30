@@ -20,8 +20,9 @@ public class Main {
         miventana.add(banner.getJPanel(), BorderLayout.WEST);
 
         Loginpanel panellogin = new Loginpanel();
-
         miventana.add(panellogin.getJPanel(), BorderLayout.CENTER); 
+
+        
         
         miventana.setVisible(true);
 
