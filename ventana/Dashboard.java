@@ -12,6 +12,8 @@ public class Dashboard extends JFrame {
             nuevaventana.setSize(1000,800);
             nuevaventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             nuevaventana.setLayout(new BorderLayout());
+
+            
             
             nuevaventana.setVisible(true);
             
