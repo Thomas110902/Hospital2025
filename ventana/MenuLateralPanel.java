@@ -8,8 +8,8 @@ public class MenuLateralPanel {
 
     public MenuLateralPanel() {
         panelMenu = new JPanel();
-        panelMenu.setBackground(Color.LIGHT_GRAY);
-        panelMenu.setPreferredSize(new Dimension(250, 600)); // Ancho fijo
+        panelMenu.setBackground(Color.RED);
+        panelMenu.setPreferredSize(new Dimension(400, 600)); // Ancho fijo
 
         // Ejemplo: Añade un botón
         JButton boton = new JButton("Menú");

@@ -1,33 +1,25 @@
 package ventana;
 
-import java.awt.BorderLayout;
-import javax.swing.JFrame;
-import javax.swing.SwingUtilities;
-import ventana.MenuLateralPanel;
+import java.awt.*;
+import javax.swing.*;
 import tabla.Tablapanel;
+import header.HeaderPanel;  // Importa desde el paquete header
 
 public class DashBoard extends JFrame {
-    
     public DashBoard() {
+        // Configuración básica
         setTitle("Dashboard");
-        setSize(1000, 700); 
+        setSize(1000, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        
-        MenuLateralPanel menuPanel = new MenuLateralPanel();
-        Tablapanel tablaPanel = new Tablapanel();
+        // Añade el Header (desde el paquete header)
+        add(new HeaderPanel(), BorderLayout.NORTH);  // ✅ Correcto
 
-        
-        add(tablaPanel, BorderLayout.CENTER);   
-        add(menuPanel.getJPanel(), BorderLayout.WEST); 
+        // Resto de componentes
+        add(new MenuLateralPanel().getJPanel(), BorderLayout.WEST);
+        add(new Tablapanel(), BorderLayout.CENTER);
 
         setVisible(true);
-    }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            new DashBoard();
-        });
     }
 }
