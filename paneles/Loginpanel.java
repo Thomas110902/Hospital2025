@@ -1,4 +1,4 @@
-package vistas;
+package paneles;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-import ventana.Dashboard;
+import ventana.DashBoard;
 import control.LoginControler;
 
 
@@ -65,7 +65,7 @@ public class Loginpanel{
                     JFrame framePadre = (JFrame) SwingUtilities.getWindowAncestor(panelLogin);
                     framePadre.dispose();
                     
-                    new Dashboard().getDashFrame();
+                    new DashBoard();
                 }
             }
         });
