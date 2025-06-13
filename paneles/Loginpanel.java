@@ -2,7 +2,7 @@ package paneles;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.event.ActionEvent; //importar la clase 
+import java.awt.event.ActionEvent; 
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
@@ -70,10 +70,10 @@ public class Loginpanel{
             }
         });
 
-// Subpanel para alinear a la derecha
+
         JPanel botonPanel = new JPanel(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
-        botonPanel.setOpaque(false); // para que no tape el fondo blanco
-        botonPanel.setMaximumSize(new Dimension(800, 60)); // igual que el resto de campos
+        botonPanel.setOpaque(false); 
+        botonPanel.setMaximumSize(new Dimension(800, 60)); 
         botonPanel.add(titulo4);
         panelLogin.add(botonPanel);
 
