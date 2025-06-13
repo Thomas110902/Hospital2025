@@ -1,4 +1,4 @@
-package tabla;
+package paneles;
 import data.Pacientes;
 import java.awt.*;
 import javax.swing.*;
@@ -10,7 +10,7 @@ public class Tablapanel extends JPanel {
 
         setLayout(new BorderLayout());
 
-        String[] columnas = { "ID", "Nombre", "Edad" };
+        String[] columnas = { "ID", "Nombre", "Edad","Tipo de Consulta","Paciente","Hora" };
         
       Object[][] datos = new Pacientes().getDatos();
         

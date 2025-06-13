@@ -1,4 +1,4 @@
-package ventana;
+package paneles;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,9 +9,8 @@ public class MenuLateralPanel {
     public MenuLateralPanel() {
         panelMenu = new JPanel();
         panelMenu.setBackground(Color.RED);
-        panelMenu.setPreferredSize(new Dimension(400, 600)); // Ancho fijo
+        panelMenu.setPreferredSize(new Dimension(400, 600)); 
 
-        // Ejemplo: Añade un botón
         JButton boton = new JButton("Menú");
         panelMenu.add(boton);
     }

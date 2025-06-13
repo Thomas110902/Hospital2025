@@ -3,7 +3,7 @@ package control;
 public class LoginControler {
     // Datos del usuario temporal
     String[][] credenciales = {
-        {"thomaslu", "elpollitopio"}, {"alex_g", "securePass123"}, {"mariadb", "dragon2024!"},
+        {"thomaslu", "123"}, {"alex_g", "securePass123"}, {"mariadb", "dragon2024!"},
         {"codeMaster", "blueSky#45"}, {"tester_qa", "th0m@sPwd"}, {"devOps42", "javaCoder$7"},
         {"cyberNinja", "goldenKey22"}, {"javaKing", "myp@ssW0RD"}, {"pythonLover", "summerTime99"},
         {"rootAdmin", "admin!1234"}, {"theBoss", "winterIsComing"}

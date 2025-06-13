@@ -2,8 +2,10 @@ package ventana;
 
 import java.awt.*;
 import javax.swing.*;
-import tabla.Tablapanel;
-import header.HeaderPanel;  // Importa desde el paquete header
+
+
+import paneles.MenuLateralPanel;
+import paneles.Tablapanel;
 
 public class DashBoard extends JFrame {
     public DashBoard() {
@@ -14,7 +16,7 @@ public class DashBoard extends JFrame {
         setLayout(new BorderLayout());
 
         // Añade el Header (desde el paquete header)
-        add(new HeaderPanel(), BorderLayout.NORTH);  // ✅ Correcto
+
 
         // Resto de componentes
         add(new MenuLateralPanel().getJPanel(), BorderLayout.WEST);

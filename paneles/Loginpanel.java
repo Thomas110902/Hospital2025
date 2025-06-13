@@ -31,14 +31,14 @@ public class Loginpanel{
         titulo.setAlignmentX(Component.CENTER_ALIGNMENT);
         panelLogin.add(Box.createRigidArea(new Dimension(0, 20)));
 
-        JTextField titulo2 = new JTextField("Usuario");
+        JTextField titulo2 = new JTextField("");
         titulo2.setPreferredSize(new Dimension(5,5));
         titulo2.setAlignmentX(Component.CENTER_ALIGNMENT);
         titulo2.setMaximumSize(new Dimension(800,30));
         panelLogin.add(titulo2);
         panelLogin.add(Box.createRigidArea(new Dimension(0, 10)));
 
-        JTextField titulo3 = new JTextField("Contraseña");
+        JTextField titulo3 = new JTextField("");
         titulo3.setPreferredSize(new Dimension(250,50));
         titulo3.setMaximumSize(new Dimension(800,30));
         titulo3.setAlignmentX(Component.CENTER_ALIGNMENT);
