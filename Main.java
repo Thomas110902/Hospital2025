@@ -11,7 +11,7 @@ public class Main {
         //Crear una ventana con JFrame
         JFrame miventana = new JFrame();
         miventana.setTitle("Hospital SCL");
-        miventana.setSize(1000,800);
+        miventana.setSize(1200,800);
         miventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         miventana.setLayout(new BorderLayout());
         miventana.setLocationRelativeTo(null);
