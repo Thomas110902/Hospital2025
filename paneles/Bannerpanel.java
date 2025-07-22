@@ -14,6 +14,7 @@ public class Bannerpanel {
         paneldelBanner.setOpaque(true);
         paneldelBanner.setBackground(Color.RED); // o Color.WHITE si prefieres
     }
+    
 
     public JPanel getJPanel() {
         return paneldelBanner;

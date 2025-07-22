@@ -5,6 +5,8 @@ import java.awt.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
+
 public class MenuLateralPanel {
     private JPanel panelMenu;
 
@@ -21,12 +23,12 @@ public class MenuLateralPanel {
         topPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
         // Información del doctor
-        JLabel nombreDoctor = new JLabel("Dr. Juan Carlos");
+        JLabel nombreDoctor = new JLabel("Dra. Margeory Haydeé");
         nombreDoctor.setFont(new Font("Arial", Font.BOLD, 24));
         nombreDoctor.setForeground(Color.WHITE);
         nombreDoctor.setAlignmentX(Component.CENTER_ALIGNMENT);
        
-        JLabel especialidad = new JLabel("Cirujano");
+        JLabel especialidad = new JLabel("Neurocirujana");
         especialidad.setFont(new Font("Arial", Font.ITALIC, 18));
         especialidad.setForeground(Color.WHITE);
         especialidad.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -54,11 +56,31 @@ public class MenuLateralPanel {
         topPanel.add(Box.createRigidArea(new Dimension(0, 30)));
 
         // Botones del menú (excepto Salir)
+        // ... código anterior
+
+// Botón de Medicamentos (con funcionalidad)
+        JButton btnMedicamentos = new JButton("Medicamentos");
+        btnMedicamentos.setAlignmentX(Component.CENTER_ALIGNMENT);
+        btnMedicamentos.setMaximumSize(new Dimension(Integer.MAX_VALUE, btnMedicamentos.getPreferredSize().height));
+        btnMedicamentos.setBackground(Color.WHITE);
+        btnMedicamentos.setForeground(Color.RED);
+        btnMedicamentos.setFocusPainted(false);
+
+        // Evento para abrir la nueva ventana
+        
+     btnMedicamentos.addActionListener(e -> new ventana.Ventanamedicamentos());
+
+
+
+        topPanel.add(Box.createRigidArea(new Dimension(0, 10)));
+        topPanel.add(btnMedicamentos);
+
+
         String[] textosBotones = {
             "Pacientes",
             "Citas",
             "Historiales",
-            "Configuración",
+            "Configuracion",
             "Camilla",
             "Tipo de Consulta"
         };
